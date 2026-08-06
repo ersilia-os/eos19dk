@@ -1,1 +1,3 @@
 name,type,direction,description
+x,float,,X-coordinate of the molecule in the pretrained parametric t-SNE chemical space map
+y,float,,Y-coordinate of the molecule in the pretrained parametric t-SNE chemical space map
