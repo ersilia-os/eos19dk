@@ -2,6 +2,7 @@
 
 Projects any molecule, given as a SMILES string, onto a 2D map of chemical space using a pre-trained parametric t-SNE neural network. The projection is deterministic: structurally similar compounds consistently cluster together, based on 2048-bit ECFP fingerprints (radius=3) and a network trained on 1.56 million ChEMBL v.23 structures. Useful for exploring chemical space, checking a QSAR/QSPR models applicability domain, and spotting model cliffs where structurally similar compounds get inconsistent predictions.
 
+This model was incorporated on 2026-08-06.
 
 
 ## Information
@@ -35,8 +36,11 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos19dk.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos19dk.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `17`
+- **Environment Size (Mb):** `510`
 
 
 ### References
