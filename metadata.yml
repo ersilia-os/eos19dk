@@ -1,33 +1,38 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos19dk
+Slug: molcompass
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: MolCompass Chemical Space Projection
+Description: 'Projects any molecule, given as a SMILES string, onto a 2D map of chemical
+  space using a pre-trained parametric t-SNE neural network. The projection is deterministic:
+  structurally similar compounds consistently cluster together, based on 2048-bit
+  ECFP fingerprints (radius=3) and a network trained on 1.56 million ChEMBL v.23 structures.
+  Useful for exploring chemical space, checking a QSAR/QSPR models applicability domain,
+  and spotting model cliffs where structurally similar compounds get inconsistent
+  predictions.'
 Deployment:
   - Local
   - Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
+Subtask: Property calculation or prediction, Activity prediction, Featurization,
+  Projection, Similarity search, Generation
+Input:
   - Compound
 Input Dimension: 1
-Output: 
+Output:
   - Value
   - Score
   - Compound
   - Text
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: The output of this template model should be interpreted like 
+  this.
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - Embedding
+  - Fingerprint
+  - Similarity
 Biomedical Area:
   - Biomedical Area 1
   - Biomedical Area 2
@@ -36,6 +41,7 @@ Target Organism:
   - Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2026
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://link.springer.com/article/10.1186/s13321-024-00888-z
+Source Code: https://github.com/sergsb/molcomplib
+License: MIT
+Contributor: arnaucoma24
