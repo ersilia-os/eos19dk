@@ -1,6 +1,6 @@
 Identifier: eos19dk
 Slug: molcompass
-Status: In progress
+Status: Ready
 Title: MolCompass Chemical Space Projection
 Description: 'Projects any molecule, given as a SMILES string, onto a 2D map of chemical
   space using a pre-trained parametric t-SNE neural network. The projection is deterministic:
@@ -39,6 +39,18 @@ Source Code: https://github.com/sergsb/molcomplib
 License: MIT
 Contributor: arnaucoma24
 Incorporation Date: '2026-08-06'
+Last Packaging Date: '2026-08-06'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos19dk.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos19dk
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 17.0
 Environment Size: 510.0
+Image Size: 570.39
+Computational Performance 1: 28.82
+Computational Performance 2: 22.42
+Computational Performance 3: 21.71
+Computational Performance 4: 28.86
+Computational Performance 5: 52.8
