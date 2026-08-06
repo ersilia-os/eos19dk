@@ -22,7 +22,8 @@ Output:
   - Value
 Output Dimension: 2
 Output Consistency: Fixed
-Interpretation: X and Y coordinates locating the molecule within the pretrained parametric t-SNE chemical-space map.
+Interpretation: X and Y coordinates locating the molecule within the pretrained 
+  parametric t-SNE chemical-space map.
 Tag:
   - Embedding
   - Fingerprint
@@ -37,3 +38,4 @@ Publication: https://doi.org/10.1186/s13321-024-00888-z
 Source Code: https://github.com/sergsb/molcomplib
 License: MIT
 Contributor: arnaucoma24
+Incorporation Date: '2026-08-06'
