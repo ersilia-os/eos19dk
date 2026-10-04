@@ -1,6 +1,6 @@
 # MolCompass Chemical Space Projection
 
-Projects any molecule, given as a SMILES string, onto a 2D map of chemical space using a pre-trained parametric t-SNE neural network. The projection is deterministic: structurally similar compounds consistently cluster together, based on 2048-bit ECFP fingerprints (radius=3) and a network trained on 1.56 million ChEMBL v.23 structures. Useful for exploring chemical space, checking a QSAR/QSPR models applicability domain, and spotting model cliffs where structurally similar compounds get inconsistent predictions.
+Places a molecule on a two-dimensional map of chemical space using MolCompass, a parametric t-SNE network trained in advance so that projection is a single forward pass rather than a refitting of the whole embedding. Because the mapping is learned and fixed, the same molecule always lands in the same position and structurally similar compounds cluster together, which conventional t-SNE cannot guarantee. Coordinates describe relative position in the reference space and carry no property prediction.
 
 This model was incorporated on 2026-08-06.Last packaged on 2026-08-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-08-06.Last packaged on 2026-08-06.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** X and Y coordinates locating the molecule within the pretrained parametric t-SNE chemical-space map.
+- **Interpretation:** Two-dimensional coordinates locating the molecule in a pretrained t-SNE chemical space.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
