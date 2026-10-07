@@ -1,6 +1,6 @@
 # MolCompass Chemical Space Projection
 
-Places a molecule on a two-dimensional map of chemical space using MolCompass, a parametric t-SNE network trained in advance so that projection is a single forward pass rather than a refitting of the whole embedding. Because the mapping is learned and fixed, the same molecule always lands in the same position and structurally similar compounds cluster together, which conventional t-SNE cannot guarantee. Coordinates describe relative position in the reference space and carry no property prediction.
+Places a molecule on a two-dimensional map of chemical space with MolCompass, a parametric t-SNE network trained in advance on 1,564,049 ChEMBL v23 structures encoded as 2048-bit ECFP fingerprints of radius 3. Because the mapping is learned and fixed, projection is a single forward pass and the same structure always lands in the same place, which ordinary t-SNE cannot guarantee. The map was built for inspecting the applicability domain of QSAR models and for spotting model cliffs; it describes relative position in ChEMBL-like chemistry and predicts no property.
 
 This model was incorporated on 2026-08-06.Last packaged on 2026-08-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-08-06.Last packaged on 2026-08-06.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Two-dimensional coordinates locating the molecule in a pretrained t-SNE chemical space.
+- **Interpretation:** Coordinates placing the molecule on a parametric t-SNE map of ChEMBL chemical space.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
