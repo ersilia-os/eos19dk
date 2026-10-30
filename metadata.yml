@@ -2,13 +2,14 @@ Identifier: eos19dk
 Slug: molcompass
 Status: Ready
 Title: MolCompass Chemical Space Projection
-Description: Places a molecule on a two-dimensional map of chemical space with MolCompass,
-  a parametric t-SNE network trained in advance on 1,564,049 ChEMBL v23 structures
-  encoded as 2048-bit ECFP fingerprints of radius 3. Because the mapping is learned
-  and fixed, projection is a single forward pass and the same structure always lands
-  in the same place, which ordinary t-SNE cannot guarantee. The map was built for
-  inspecting the applicability domain of QSAR models and for spotting model cliffs;
-  it describes relative position in ChEMBL-like chemistry and predicts no property.
+Description: Places a molecule on a two-dimensional map of chemical space with 
+  MolCompass, a parametric t-SNE network trained in advance on 1,564,049 ChEMBL 
+  v23 structures encoded as 2048-bit ECFP fingerprints of radius 3. Because the 
+  mapping is learned and fixed, projection is a single forward pass and the same
+  structure always lands in the same place, which ordinary t-SNE cannot 
+  guarantee. The map was built for inspecting the applicability domain of QSAR 
+  models and for spotting model cliffs; it describes relative position in 
+  ChEMBL-like chemistry and predicts no property.
 Deployment:
   - Local
 Source: Local
@@ -22,8 +23,8 @@ Output:
   - Value
 Output Dimension: 2
 Output Consistency: Fixed
-Interpretation: Coordinates placing the molecule on a parametric t-SNE map of ChEMBL
-  chemical space.
+Interpretation: Coordinates placing the molecule on a parametric t-SNE map of 
+  ChEMBL chemical space.
 Tag:
   - Embedding
   - Fingerprint
@@ -40,7 +41,7 @@ License: MIT
 Contributor: arnaucoma24
 Incorporation Date: '2026-08-06'
 Last Packaging Date: '2026-08-06'
-Release: v1.0.0
+Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos19dk.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos19dk
 Docker Architecture:
