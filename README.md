@@ -2,7 +2,8 @@
 
 Places a molecule on a two-dimensional map of chemical space with MolCompass, a parametric t-SNE network trained in advance on 1,564,049 ChEMBL v23 structures encoded as 2048-bit ECFP fingerprints of radius 3. Because the mapping is learned and fixed, projection is a single forward pass and the same structure always lands in the same place, which ordinary t-SNE cannot guarantee. The map was built for inspecting the applicability domain of QSAR models and for spotting model cliffs; it describes relative position in ChEMBL-like chemistry and predicts no property.
 
-This model was incorporated on 2026-08-06.Last packaged on 2026-08-06.
+This model was incorporated on 2026-08-06.
+Last packaged on 2026-08-06.
 
 ## Information
 ### Identifiers
@@ -38,6 +39,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos19dk](https://hub.docker.com/r/ersiliaos/eos19dk)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos19dk.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos19dk.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos19dk_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos19dk_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `17`
